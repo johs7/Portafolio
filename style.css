@@ -200,6 +200,7 @@ header.sticky{
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: 600;
+    color: #191919;
 }
 .sub-box p{
     font-size: var(--p-font);
@@ -224,6 +225,7 @@ header.sticky{
     font-weight: 600;
     margin:7px 0px 20px;
     line-height: 1.1;
+    text-align: center;
 }
 .heading h3{
     font-size: 1.2rem;
@@ -308,4 +310,62 @@ header.sticky{
 .layer:hover h5{
     bottom: 45%;
     opacity: 1;
+}
+.services{
+color: #191919;
+}
+.contenido-servicios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;
+    cursor: pointer;
+ 
+ 
+
+
+}
+.row{
+    background: #ffffff;
+    box-shadow: 18px 0px 87px 0px rgb(10 15 70/7%);
+    border-radius: 12px;
+    padding: 45px 45px 45px 45px;
+    transition: ease .50s;
+}
+.contenido-servicios img{
+    
+    width: 150px;
+    height: auto;
+}
+.title-otro{
+    text-align: center;
+}
+.s img{
+    width: 150px;
+    height: auto;
+    padding: 15px;
+    border-radius: 30%;
+    margin-bottom: 20px;
+    background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 70%);
+}
+.row h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.row h5{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 19px;
+}
+
+.row:hover
+{
+    background: #346588;
+    box-shadow: 18px 0px 87px 0px rgb(10 15 70/7%);
+    border-radius: 12px;
+    will-change: transform;
+    color: var(--bg-color);
 }
