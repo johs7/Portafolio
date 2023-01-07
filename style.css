@@ -100,8 +100,8 @@ font-size: var(--p-font);
     color: #18264d;
 }
 
-.home_img img{
-    width: 540px;
+.perfilj{
+    width: 440px;
     height: auto;
 }
 section{
@@ -174,7 +174,7 @@ header.sticky{
 }
 .items{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(320px,auto));
     grid-gap: 2rem;
     align-items: center;
     text-align: center;
@@ -200,7 +200,7 @@ header.sticky{
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: 600;
-    color: #191919;
+    color: #97ABFF
 }
 .sub-box p{
     font-size: var(--p-font);
@@ -208,12 +208,14 @@ header.sticky{
     line-height: 29px;
 }
 .sub-box:hover{
+    transform: scale(1.1);   
     background: #346588;
     box-shadow: 18px 0px 87px 0px rgb(10 15 70/7%);
     border-radius: 12px;
     will-change: transform;
     color: var(--bg-color);
 }
+
 .portafolio{
     background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);
 }
@@ -262,13 +264,13 @@ header.sticky{
     top: 0;
     left: 0;
     border-radius: 12px;
-    transition: easease-in-out .40s;
+    transition: ease-in-out .40s;
 
 }
 .layer:hover{
+    
     background:linear-gradient(rgba(0,0,0,0.5)0%,#191919);
-
-    transition: easease-in-out .40s;
+    transition: ease-in-out .40s;
     border: 1px solid #fff;
   
 }
@@ -278,7 +280,7 @@ header.sticky{
 .layer h3{
     position: absolute;
     width: 100%;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 500;
     color: var(--bg-color);
     bottom: 0;
@@ -291,7 +293,7 @@ header.sticky{
 .layer h5{
     position: absolute;
     width: 100%;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 500;
     color: var(--bg-color);
     bottom: 0;
@@ -316,56 +318,122 @@ color: #191919;
 }
 .contenido-servicios{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,auto));
-    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(180px,auto));
+    grid-gap: 1rem;
     align-items: center;
     margin-top: 5rem;
-    text-align: center;
+ 
     cursor: pointer;
- 
- 
-
-
 }
 .row{
+    width: 100%;
+    Height: 90%;
     background: #ffffff;
-    box-shadow: 18px 0px 87px 0px rgb(10 15 70/7%);
+    box-shadow: 18px 0px 85px 0px rgb(10 15 70/7%);
     border-radius: 12px;
     padding: 45px 45px 45px 45px;
     transition: ease .50s;
 }
 .contenido-servicios img{
-    
-    width: 150px;
+
+    width: 120px;
     height: auto;
 }
 .title-otro{
-    text-align: center;
+
 }
 .s img{
     width: 150px;
     height: auto;
-    padding: 15px;
+
     border-radius: 30%;
-    margin-bottom: 20px;
-    background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 70%);
+ 
+
 }
-.row h3{
+.row h2{
     font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 2px;
+    font-weight: 700;
+  text-align: center;
+
 }
 .row h5{
     font-size: 17px;
     font-weight: 500;
-    margin-bottom: 19px;
+    text-align: center;
+
 }
 
 .row:hover
 {
+    transform: scale(1.1);   
     background: #346588;
-    box-shadow: 18px 0px 87px 0px rgb(10 15 70/7%);
-    border-radius: 12px;
+    box-shadow: 10px 0px 10px 0px rgb(10 15 70/7%);
+    border-radius: 5px;
     will-change: transform;
     color: var(--bg-color);
+}
+
+@media(max-width: 1425px){
+    .header{
+        padding: 16px 3%;
+        transition: .3s;
+    }
+    .header.sticky{
+        padding: 70px 3%;
+        transition: 3s;
+    }
+    .section{
+        padding: 100px 18%;
+        transition: .3s;
+    }
+  :root{
+    --h2-font: 2.5rem;
+    --p-font: 1rem;
+    transition: .3s;
+  }
+  
+}
+@media(max-width:970px){ /*maña miras esto*/
+#menu-icon{
+display: block;
+}
+.home_img img{
+    width: 320px;
+  
+}
+  .home{
+    min-height: 80vh;
+    padding: 100px;
+  }
+  .navlist{
+    position: absolute;
+    top:-500px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--menu-color);
+    text-align: right;
+    transition: all .40s;
+
+}
+.navlist a{
+    display:block;
+    padding: 1.2rem;
+    margin: 1.5 rem;
+    color: var(--bg-color);
+    border-right: 2px solid var(--bg-color);
+  
+
+}
+.navlist a:hover{
+    background: var(--bg-color);
+    color: var(--menu-color);
+}
+.navlist a::after{
+    display: none;
+}
+.navlist.active{
+    top:100%
+}
+    
 }
