@@ -17,6 +17,7 @@
     --h2-font:3rem;
     --p-font:1.1rem;
 }
+
 body{
     background: var(--bg-color);
     color: var(--text-color);
@@ -339,9 +340,7 @@ color: #191919;
     width: 120px;
     height: auto;
 }
-.title-otro{
 
-}
 .s img{
     width: 150px;
     height: auto;

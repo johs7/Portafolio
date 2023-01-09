@@ -21,9 +21,9 @@ menu.onclick=()=>{
     duration:2500,
     reset:true,
   });
-  sr.reveal('.home-text',{delay:100,origin:'bottom'});
-  sr.reveal('.home_img',{delay:100,origin:'top'});
+  sr.reveal('.home-text',{delay:700,origin:'bottom'});
+  sr.reveal('.home_img',{delay:700,origin:'top'});
 
-  sr.reveal('.acerca',{delay:100,origin:'left'});
+  sr.reveal('.acerca',{delay:700,origin:'left'});
 
-  sr.reveal('.heading,.col',{delay:100,origin:'left'});
+  sr.reveal('.heading,.col',{delay:700,origin:'left'});
