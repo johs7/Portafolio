@@ -21,9 +21,11 @@ menu.onclick=()=>{
     duration:2500,
     reset:true,
   });
-  sr.reveal('.home-text',{delay:700,origin:'bottom'});
-  sr.reveal('.home_img',{delay:700,origin:'top'});
 
-  sr.reveal('.acerca',{delay:700,origin:'left'});
+  sr.reveal('.home-text,.row p,.home_img,.s-two,.s-three,.s-six,.s-seven,.s-ten,.s-eleven,.row-two,.row-three,.sub-box'
+  ,{delay:900,origin:'left'});
 
-  sr.reveal('.heading,.col',{delay:700,origin:'left'});
+  sr.reveal('.acerca,.s-four,.s-five,.s-eigth,.s-nine,.row-four,.row-five'
+  ,{delay:900,origin:'left'});
+
+  sr.reveal('.heading,.col',{delay:900,origin:'left'});

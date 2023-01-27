@@ -17,7 +17,6 @@
     --h2-font:3rem;
     --p-font:1.1rem;
 }
-
 body{
     background: var(--bg-color);
     color: var(--text-color);
@@ -148,7 +147,7 @@ border-radius: 25px;
     align-items: center;
     justify-content: center;
     margin-bottom: 25px;
-    transition: ease .40s;
+    transition: ease .50s;
 }
 
 .social a:hover{
@@ -186,14 +185,15 @@ header.sticky{
 }
 
 .sub-box{
-    padding: 45px 45px 45px 45px;
+    padding: 40px 40px 40px 40px;
     transition: ease .50s;
     cursor: pointer;
+     
 
 }
 .sub-img img{
     max-width: 100%;
-    width: 90px;
+    width: 80px;
     height: auto;
     margin-bottom: 20px;
 }
@@ -201,20 +201,20 @@ header.sticky{
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: 600;
-    color: #97ABFF
+    color: #123597;
 }
 .sub-box p{
     font-size: var(--p-font);
-    color: var(--second-color);
+    color:#123597;
     line-height: 29px;
 }
 .sub-box:hover{
-    transform: scale(1.1);   
-    background: #346588;
-    box-shadow: 18px 0px 87px 0px rgb(10 15 70/7%);
+    transform: scale(0.9);   
+    background: var(--menu-color);
+    box-shadow: 10px 0px 57px 0px rgb(10 15 70/7%);
     border-radius: 12px;
     will-change: transform;
-    color: var(--bg-color);
+   color:var(--bg-color);
 }
 
 .portafolio{
@@ -240,10 +240,9 @@ header.sticky{
 .portafolio-content{
   
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
-    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(281px,auto));
+   
     align-items: center;
-    margin-top: 5rem;
     text-align: center;
     cursor: pointer;
 }
@@ -272,7 +271,7 @@ header.sticky{
     
     background:linear-gradient(rgba(0,0,0,0.5)0%,#191919);
     transition: ease-in-out .40s;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
   
 }
 .col1_color{
@@ -281,7 +280,7 @@ header.sticky{
 .layer h3{
     position: absolute;
     width: 100%;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
     color: var(--bg-color);
     bottom: 0;
@@ -294,7 +293,7 @@ header.sticky{
 .layer h5{
     position: absolute;
     width: 100%;
-    font-size: 35px;
+    font-size: 15px;
     font-weight: 500;
     color: var(--bg-color);
     bottom: 0;
@@ -319,7 +318,7 @@ color: #191919;
 }
 .contenido-servicios{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(180px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(280px,auto));
     grid-gap: 1rem;
     align-items: center;
     margin-top: 5rem;
@@ -329,7 +328,7 @@ color: #191919;
 .row{
     width: 100%;
     Height: 90%;
-    background: #ffffff;
+     background: #fae6e6;
     box-shadow: 18px 0px 85px 0px rgb(10 15 70/7%);
     border-radius: 12px;
     padding: 45px 45px 45px 45px;
@@ -337,15 +336,16 @@ color: #191919;
 }
 .contenido-servicios img{
 
-    width: 120px;
+    width: 100px;
     height: auto;
 }
 
 .s img{
-    width: 150px;
-    height: auto;
-
-    border-radius: 30%;
+    width: 65px;
+    height: 65px;
+     padding: 15px;
+    border-radius: 50%;
+        background: #415a77;
  
 
 }
@@ -366,7 +366,7 @@ color: #191919;
 {
     transform: scale(1.1);   
     background: #346588;
-    box-shadow: 10px 0px 10px 0px rgb(10 15 70/7%);
+    box-shadow: 10px 0px 10px 0px rgb(10 15 20/7%);
     border-radius: 5px;
     will-change: transform;
     color: var(--bg-color);
@@ -392,17 +392,19 @@ color: #191919;
   }
   
 }
-@media(max-width:970px){ /*maña miras esto*/
+@media(max-width:1170px){ /*maña miras esto*/
 #menu-icon{
 display: block;
+  margin-right:40px;
+  
 }
 .home_img img{
-    width: 320px;
+    width: 330px;
   
 }
   .home{
     min-height: 80vh;
-    padding: 100px;
+    padding: 52px;
   }
   .navlist{
     position: absolute;
@@ -435,4 +437,35 @@ display: block;
     top:100%
 }
     
+}
+@media(max-width:890px){
+.home{
+    grid-template-columns:1fr;
+    min-height: 130vh;
+    grid-gap: 2 rem;
+}
+.home_img {
+    text-align: center;
+}
+
+.home-text{
+    padding-top: 50px;
+}
+.section{
+    padding:60px 3%
+}
+.acerca{
+    grid-template-columns: 1fr;
+}
+.sub-img{
+text-align: center;
+margin-bottom: 30px;
+}
+:root{
+    --big-font: 3.4rem;
+    --h2-font: 2rem;
+}
+}
+.s{
+    width: 20px;
 }
