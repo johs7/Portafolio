@@ -171,14 +171,10 @@ header.sticky{
 }
 .items{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(320px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
     grid-gap: 2rem;
-    align-items: center;
+  
     text-align: center;
-}
-.items img{
-    width: 150px;
-    height: 150px;
 }
 
 .sub-box{
@@ -186,10 +182,9 @@ header.sticky{
     transition: ease .50s;
     cursor: pointer;
 }
-.sub-img img{
-    max-width: 100%;
+.sub-box img{
     width: 80px;
-    height: auto;
+    height: 80px;
     margin-bottom: 20px;
 }
 .sub-box h3{
@@ -202,13 +197,6 @@ header.sticky{
     font-size: var(--p-font);
     color:#123597;
     line-height: 29px;
-}
-.sub-box:hover{
-    transform: scale(0.9);   
-   background: var(--second-color);
-    box-shadow: 10px 0px 57px 0px rgb(10 15 70/7%);
-    border-radius: 12px;
-    will-change: transform;
 }
 
 .portafolio{
@@ -280,8 +268,6 @@ header.sticky{
 .layer a{
     position: absolute;
     background: var(--menu-color);
-    font-size: 10px;
-    font-weight: 500;
     padding: 10px 10px;
     bottom: 0;
     left: 50%;
@@ -291,15 +277,25 @@ header.sticky{
      background: transparent;
      border: 2px solid #123597;
 }
+.layer,.info h5{
+    font-size: 12px;
+}
 .layer:hover h3{
-    bottom: 52%;
+    bottom: 50%;
+    font-weight: 500;
     opacity: 1;
     color: var(--menu-color);
 }
-.layer:hover a{
-    bottom: 30%;
+.layer:hover .info{
+    bottom: 35%;
+    left: 35%;
     opacity: 1;
-
+}
+.layer:hover a{
+    bottom:35%;
+    left: 65%;
+    opacity: 1;
+    color: var(--menu-color);
 }
 .services{
 color: var(--menu-color);
@@ -308,10 +304,11 @@ color: var(--menu-color);
     background: var(--btn-color);
     color: var(--bg-color);
     border: none;
+    opacity: 1;
 }
 .contenido-servicios{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(180px,auto));
     grid-gap: 1rem;
     align-items: center;
     margin-top: 5rem;
@@ -323,7 +320,7 @@ color: var(--menu-color);
      background: #fae6e6;
     box-shadow: 18px 0px 85px 0px rgb(10 15 70/7%);
     border-radius: 12px;
-    padding: 45px 45px 45px 45px;
+    padding: 35px 35px 35px 35px;
     transition: ease .50s;
 }
 .contenido-servicios img{
@@ -446,7 +443,4 @@ margin-bottom: 30px;
     --big-font: 3.4rem;
     --h2-font: 2rem;
 }
-}
-.s{
-    width: 20px;
 }
